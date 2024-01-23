@@ -26,4 +26,12 @@ platform :ios do
       export_method: "app-store"
     )
   end
+
+  desc "build test"
+  lane :build_test do
+    build_app(
+      scheme: "Release",
+      export_method: "app-store"
+    )
+  end
 end
